@@ -9,13 +9,13 @@
 			</p>
 		</div>
 		<div class='buttons'>
-			<a href="/"><img src="mail.svg" alt="mail"></a>
-			<a href="/"><img src="share.svg" alt="share"></a>
+			<a href="mailto:tgifelix@icloud.com"><img src="mail.svg" alt="mail"></a>
+			<a href="mailto:?subject=Hire this guy!&body=https://www.tgifelix.com"><img src="share.svg" alt="share"></a>
 		</div>
 	</div>
 </main>
 <footer>
-	<a href="/"><img src="source.svg" alt="source"></a>
+	<a href="https://github.com/TGIFelix/site"><img src="source.svg" alt="source"></a>
 </footer>
 
 <style>
