@@ -86,4 +86,56 @@
 		right: 0;
 		padding: 25px;
 	}
+
+	@media screen and (max-width: 500px) {
+		.block {
+		position: absolute;
+		width: 80%;
+		height: 50vh;
+		background: #FFFFFF;
+		border: 8px solid #000000;
+		box-shadow: 15px 15px 0px #000000;
+	}
+    p {
+      font-size: 16px;
+    }
+	.text {
+		padding: 30px;
+	}
+  }
+
+  @media screen and (max-width: 800px) {
+		.block {
+		position: absolute;
+		width: 80%;
+		height: 70vh;
+		background: #FFFFFF;
+		border: 8px solid #000000;
+		box-shadow: 15px 15px 0px #000000;
+	}
+    p {
+      font-size: 22px;
+    }
+	.text {
+		padding: 30px;
+	}
+  }
+
+  @media screen and (max-width: 1600px) {
+		.block {
+		position: absolute;
+		width: 80%;
+		height: 70vh;
+		background: #FFFFFF;
+		border: 8px solid #000000;
+		box-shadow: 15px 15px 0px #000000;
+	}
+    p {
+      font-size: 22px;
+    }
+	.text {
+		padding: 30px;
+	}
+  }
+  
 </style>
