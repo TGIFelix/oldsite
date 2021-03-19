@@ -35,7 +35,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-height: 90vh;
+		height: 100vh;
     }
 
 	felix {
@@ -53,7 +53,7 @@
 
 	.block {
 		position: absolute;
-		width: 60%;
+		width: 80%;
 		height: 50vh;
 		background: #FFFFFF;
 		border: 10px solid #000000;
@@ -62,9 +62,9 @@
 
 	.text {
 		position: absolute;
-		font-size: 28px;
+		font-size: 16px;
 		color: #000000;
-		padding: 60px;
+		padding: 20px;
 	}
 
 	.buttons {
@@ -73,7 +73,6 @@
 		position: absolute;
 		bottom: 25px;
 		left: 50px;
-		/* padding: 0 0 20px 20px; */
 	}
 
 	footer {
@@ -87,26 +86,8 @@
 		padding: 25px;
 	}
 
-	@media screen and (max-width: 500px) {
+	@media screen and (min-width: 600px) {
 		.block {
-		position: absolute;
-		width: 80%;
-		height: 50vh;
-		background: #FFFFFF;
-		border: 8px solid #000000;
-		box-shadow: 15px 15px 0px #000000;
-	}
-    p {
-      font-size: 16px;
-    }
-	.text {
-		padding: 30px;
-	}
-  }
-
-  @media screen and (max-width: 800px) {
-		.block {
-		position: absolute;
 		width: 80%;
 		height: 70vh;
 		background: #FFFFFF;
@@ -116,14 +97,13 @@
     p {
       font-size: 22px;
     }
-	.text {
-		padding: 30px;
+	footer {
+		padding: 10px;
 	}
   }
 
-  @media screen and (max-width: 1600px) {
+  @media screen and (min-width: 800px) {
 		.block {
-		position: absolute;
 		width: 80%;
 		height: 70vh;
 		background: #FFFFFF;
@@ -131,11 +111,11 @@
 		box-shadow: 15px 15px 0px #000000;
 	}
     p {
-      font-size: 22px;
+      font-size: 28px;
     }
-	.text {
-		padding: 30px;
+	footer {
+		padding: 10px;
 	}
   }
-  
+
 </style>
