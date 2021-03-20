@@ -1,6 +1,10 @@
+<script>
+	let bgColor = '#FFEEB0';
+</script>
+
 <main>
 	<div class='block'>
-		<div class='text'>
+		<div class='bio'>
 			<p>
 				Hi! I'm <felix>Felix</felix> and I'm available for hire. Check out my <a href="resume.pdf" target="_blank" title="Download Resume">resume</a> and let me know if you like what you see!
 			</p>
@@ -13,21 +17,28 @@
 			<a href="mailto:?subject=Hire this guy!&body=https://www.tgifelix.com"><img src="share.svg" alt="share"></a>
 		</div>
 	</div>
+	<div class='bg-color'>
+		<p>{bgColor}</p>
+	</div>
+	<div class='source'>
+		<a href="https://github.com/TGIFelix/site"><img src="github.svg" alt="source"></a>
+	</div>
 </main>
-<footer>
-	<a href="https://github.com/TGIFelix/site"><img src="source.svg" alt="source"></a>
-</footer>
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&family=Open+Sans&display=swap');
 
+	:root {
+		--color: #FFEEB0;
+	}
+	
 	:global(html, body) {
 		margin: 0;
 		padding: 0;
-		background-color: #FFEEB0;
-		max-height: 99vh;
+		background-color: var(--color);
 		font-family: 'JetBrains Mono';
 		color: #000000;
+		overflow-x: hidden;
 	}
 
 	main {
@@ -35,7 +46,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-		height: 100vh;
+		min-height: 100%;
     }
 
 	felix {
@@ -56,66 +67,62 @@
 		width: 80%;
 		height: 50vh;
 		background: #FFFFFF;
-		border: 10px solid #000000;
-		box-shadow: 20px 20px 0px #000000;
+		border: 8px solid #000000;
+		box-shadow: 15px 15px 0px #000000;
 	}
 
-	.text {
-		position: absolute;
+	.bio {
+		padding: 40px;
 		font-size: 16px;
-		color: #000000;
-		padding: 20px;
 	}
-
 	.buttons {
 		display: flex;
 		flex-direction: row;
 		position: absolute;
-		bottom: 25px;
-		left: 50px;
+		bottom: 15px;
+		left: 30px;
 	}
 
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+	.source {
 		position: absolute;
-		bottom: 0;
-		right: 0;
-		padding: 25px;
+		bottom: 20px;
+		right: 25px;
+	}
+
+	.bg-color {
+		position: absolute;
+		bottom: 10px;
+		left: 25px;
 	}
 
 	@media screen and (min-width: 600px) {
 		.block {
-		width: 80%;
-		height: 70vh;
+		width: 60%;
+		height: 60vh;
 		background: #FFFFFF;
-		border: 8px solid #000000;
-		box-shadow: 15px 15px 0px #000000;
+		border: 10px solid #000000;
+		box-shadow: 25px 25px 0px #000000;
 	}
-    p {
-      font-size: 22px;
+    	.bio {
+      		font-size: 28px;
+	  		padding: 50px;
     }
-	footer {
-		padding: 10px;
-	}
   }
 
-  @media screen and (min-width: 800px) {
+  /* @media screen and (min-width: 1024px) {
 		.block {
-		width: 80%;
-		height: 70vh;
+		width: 60%;
+		height: 60vh;
 		background: #FFFFFF;
-		border: 8px solid #000000;
-		box-shadow: 15px 15px 0px #000000;
+		border: 10px solid #000000;
+		box-shadow: 25px 25px 0px #000000;
 	}
-    p {
+    .bio {
       font-size: 28px;
+	  padding: 50px;
     }
 	footer {
-		padding: 10px;
+		padding: 25px;
 	}
-  }
-
+  } */
 </style>
