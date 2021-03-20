@@ -13,8 +13,8 @@
 			</p>
 		</div>
 		<div class='buttons'>
-			<a href="mailto:tgifelix@icloud.com"><img src="mail1.svg" alt="mail"></a>&nbsp;
-			<a href="mailto:?subject=Hire this guy!&body=https://www.tgifelix.com"><img src="share1.svg" alt="share"></a>
+			<a href="mailto:tgifelix@icloud.com"><img src="mail.svg" alt="mail"></a>&nbsp;
+			<a href="mailto:?subject=Hire this guy!&body=https://www.tgifelix.com"><img src="share.svg" alt="share"></a>
 		</div>
 	</div>
 	<div class='bg-color'>
