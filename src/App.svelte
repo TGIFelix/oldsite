@@ -13,8 +13,8 @@
 			</p>
 		</div>
 		<div class='buttons'>
-			<a href="mailto:tgifelix@icloud.com"><img src="mail.svg" alt="mail"></a>
-			<a href="mailto:?subject=Hire this guy!&body=https://www.tgifelix.com"><img src="share.svg" alt="share"></a>
+			<a href="mailto:tgifelix@icloud.com"><img src="mail1.svg" alt="mail"></a>&nbsp;
+			<a href="mailto:?subject=Hire this guy!&body=https://www.tgifelix.com"><img src="share1.svg" alt="share"></a>
 		</div>
 	</div>
 	<div class='bg-color'>
@@ -30,6 +30,8 @@
 
 	:root {
 		--color: #FFEEB0;
+		--little-padding: 40px;
+		--big-padding: 80px;
 	}
 	
 	:global(html, body) {
@@ -53,7 +55,7 @@
 		font-style: italic;
 	}
 
-	a, a:visited, a:active{
+	a {
 		text-decoration: underline;
 		color: #000000;
 	}
@@ -63,7 +65,7 @@
 	}
 
 	.block {
-		position: absolute;
+		position: fixed;
 		width: 80%;
 		height: 50vh;
 		background: #FFFFFF;
@@ -72,57 +74,26 @@
 	}
 
 	.bio {
-		padding: 40px;
+		padding: var(--little-padding);
 		font-size: 16px;
 	}
 	.buttons {
 		display: flex;
 		flex-direction: row;
-		position: absolute;
-		bottom: 15px;
-		left: 30px;
+		position: relative;
+		bottom: var(--little-padding);
+		left: var(--little-padding);
 	}
 
 	.source {
-		position: absolute;
+		position: fixed;
 		bottom: 20px;
 		right: 25px;
 	}
 
 	.bg-color {
-		position: absolute;
+		position: fixed;
 		bottom: 10px;
 		left: 25px;
 	}
-
-	@media screen and (min-width: 600px) {
-		.block {
-		width: 60%;
-		height: 60vh;
-		background: #FFFFFF;
-		border: 10px solid #000000;
-		box-shadow: 25px 25px 0px #000000;
-	}
-    	.bio {
-      		font-size: 28px;
-	  		padding: 50px;
-    }
-  }
-
-  /* @media screen and (min-width: 1024px) {
-		.block {
-		width: 60%;
-		height: 60vh;
-		background: #FFFFFF;
-		border: 10px solid #000000;
-		box-shadow: 25px 25px 0px #000000;
-	}
-    .bio {
-      font-size: 28px;
-	  padding: 50px;
-    }
-	footer {
-		padding: 25px;
-	}
-  } */
 </style>
