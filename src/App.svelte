@@ -1,5 +1,5 @@
 <script>
-	let bgColor = '#FFEEB0';
+	let bgColor = '#FED7FC';
 </script>
 
 <main>
@@ -29,7 +29,7 @@
 	@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&family=Open+Sans&display=swap');
 
 	:root {
-		--color: #FFEEB0;
+		--color: #FED7FC;
 	}
 	
 	:global(html, body) {
