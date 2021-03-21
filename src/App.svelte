@@ -29,7 +29,8 @@
 	@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&family=Open+Sans&display=swap');
 
 	:root {
-		--color: #FFEEB0;
+		--main-color: #FFEEB0;
+		--stroke-color: #000000;
 		--little-padding: 40px;
 		--big-padding: 80px;
 	}
@@ -37,7 +38,7 @@
 	:global(html, body) {
 		margin: 0;
 		padding: 0;
-		background-color: var(--color);
+		background-color: var(--main-color);
 		font-family: 'JetBrains Mono';
 		color: #000000;
 		overflow-x: hidden;
@@ -67,10 +68,10 @@
 	.block {
 		position: fixed;
 		width: 80%;
-		height: 50vh;
+		height: 55vh;
 		background: #FFFFFF;
-		border: 8px solid #000000;
-		box-shadow: 15px 15px 0px #000000;
+		border: 8px solid var(--stroke-color);
+		box-shadow: 15px 15px 0px var(--stroke-color);
 	}
 
 	.bio {
@@ -80,7 +81,7 @@
 	.buttons {
 		display: flex;
 		flex-direction: row;
-		position: relative;
+		position: absolute;
 		bottom: var(--little-padding);
 		left: var(--little-padding);
 	}
@@ -96,4 +97,21 @@
 		bottom: 10px;
 		left: 25px;
 	}
+
+	@media screen and (min-width: 700px) {
+		.block {
+			position: fixed;
+			width: 50%;
+			height: 70vh;
+		}
+		.bio {
+			font-size: 32px;
+		}
+	}
+	/* @media screen and (min-width: 900px) {
+
+		.bio {
+			font-size: 32px;
+		}
+	} */
 </style>
