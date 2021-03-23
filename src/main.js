@@ -4,11 +4,11 @@ import 'https://unpkg.com/phosphor-icons';
 const app = new App({
 	target: document.body,
 	props: {
-		bgColor: '#FFEEB0',
+		bgColor: '#E79C85',
 	}
 });
 
 document.documentElement.style
-	.setProperty('--bg-color', '#FFEEB0');
+	.setProperty('--bg-color', '#E79C85');
 
 export default app;
