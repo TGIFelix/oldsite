@@ -1,5 +1,5 @@
 <script>
-	let bgColor = '#FFEEB0';
+	export let bgColor;
 </script>
 
 <main>
@@ -27,18 +27,11 @@
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&family=Open+Sans&display=swap');
-
-	:root {
-		--main-color: #FFEEB0;
-		--stroke-color: #000000;
-		--little-padding: 40px;
-		--big-padding: 80px;
-	}
 	
 	:global(html, body) {
 		margin: 0;
 		padding: 0;
-		background-color: var(--main-color);
+		background-color: var(--bg-color);
 		font-family: 'JetBrains Mono';
 		color: #000000;
 		overflow-x: hidden;
@@ -70,20 +63,21 @@
 		width: 80%;
 		height: 55vh;
 		background: #FFFFFF;
-		border: 8px solid var(--stroke-color);
-		box-shadow: 15px 15px 0px var(--stroke-color);
+		border: 8px solid #000000;
+		box-shadow: 15px 15px 0px #000000;
 	}
 
 	.bio {
-		padding: var(--little-padding);
+
+		padding: 40px;
 		font-size: 16px;
 	}
 	.buttons {
 		display: flex;
 		flex-direction: row;
 		position: absolute;
-		bottom: var(--little-padding);
-		left: var(--little-padding);
+		bottom: 40px;
+		left: 40px;
 	}
 
 	.source {
@@ -98,20 +92,38 @@
 		left: 25px;
 	}
 
-	@media screen and (min-width: 700px) {
+	@media screen 
+		and (min-device-width: 320px) 
+		and (max-device-width: 480px)
+		and (-webkit-min-device-pixel-ratio: 2)
+		and (orientation: landscape) {
+			.block {
+				position: fixed;
+				width: 70%;
+				height: 55vh;
+				background: green;
+				border: 8px solid #000000;
+				box-shadow: 15px 15px 0px #000000;
+			}
+			.bio {
+				padding: 20px;
+				font-size: 14px;
+			}
+			.buttons {
+				bottom: 20px;
+				left: 20px;
+			}
+	}
+
+	@media screen and (min-width: 600px) {
 		.block {
-			position: fixed;
 			width: 50%;
-			height: 70vh;
+			height: 55vh;
+			border: 10px solid #000000;
+			box-shadow: 25px 25px 0px #000000;
 		}
 		.bio {
-			font-size: 32px;
+			font-size: 24px;
 		}
 	}
-	/* @media screen and (min-width: 900px) {
-
-		.bio {
-			font-size: 32px;
-		}
-	} */
 </style>

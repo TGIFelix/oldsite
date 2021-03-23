@@ -118,4 +118,6 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+# Deployment
 .vercel
+.netlify
