@@ -107,7 +107,7 @@
 				position: fixed;
 				width: 70%;
 				height: 55vh;
-				background: green;
+				background: #FFFFFF;
 				border: 8px solid #000000;
 				box-shadow: 15px 15px 0px #000000;
 			}
