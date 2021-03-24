@@ -1,6 +1,6 @@
 <script>
 	export let bgColor;
-	let emoji = ['🤙', '🤟', '😎', '🎩', '👨‍💻', '🚀', '🐒', '🌊', '🐙', '🐟', '🐳'];
+	let emoji = ['🤙', '🤟', '👨‍💻', '🚀', '🌊', '🐙', '🐟', '🐳'];
 	let favicon = emoji[Math.floor(Math.random()*emoji.length)];
 </script>
 
