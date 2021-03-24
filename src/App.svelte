@@ -23,7 +23,7 @@
 			<a href='mailto:?subject=Hire this guy!&body=https://www.tgifelix.com'><img src='share.svg' alt='share'></a>
 		</div>
 	</div>
-	<div class='bg-color'>
+	<div class='hex'>
 		<p>{bgColor}</p>
 	</div>
 	<div class='source'>
@@ -92,7 +92,7 @@
 		right: 25px;
 	}
 
-	.bg-color {
+	.hex {
 		position: fixed;
 		bottom: 10px;
 		left: 25px;
