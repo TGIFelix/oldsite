@@ -5,29 +5,29 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{favicon}</text></svg>">
+	<link rel='icon' href='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{favicon}</text></svg>'>
 </svelte:head>
 
 <main>
 	<div class='block'>
 		<div class='bio'>
 			<p>
-				Hi! I'm <felix>Felix</felix> and I'm available for hire. Check out my <a href="resume.pdf" target="_blank" title="Download Resume">resume</a> and let me know if you like what you see!
+				Hi! I'm <felix>Felix</felix> and I'm available for hire. Check out my <a href='resume.pdf' target='_blank' title='Download Resume'>resume</a> and let me know if you like what you see!
 			</p>
 			<p>
-				You can also have a look at the <a href="https://github.com/TGIFelix" target="_blank">code</a> I've published or learn something new on my <a href="https://dev.to/tgifelix" target="_blank">blog</a>!
+				You can also have a look at the <a href='https://github.com/TGIFelix' target='_blank' title='Opens GitHub in a new tab'>code</a> I've published or learn something new on my <a href='https://dev.to/tgifelix' target='_blank' title='Opens Devto in a new tab'>blog</a>!
 			</p>
 		</div>
 		<div class='buttons'>
-			<a href="mailto:tgifelix@icloud.com"><img src="mail.svg" alt="mail"></a>&nbsp;
-			<a href="mailto:?subject=Hire this guy!&body=https://www.tgifelix.com"><img src="share.svg" alt="share"></a>
+			<a href='mailto:tgifelix@icloud.com'><img src='mail.svg' alt='mail'></a>&nbsp;
+			<a href='mailto:?subject=Hire this guy!&body=https://www.tgifelix.com'><img src='share.svg' alt='share'></a>
 		</div>
 	</div>
 	<div class='bg-color'>
 		<p>{bgColor}</p>
 	</div>
 	<div class='source'>
-		<a href="https://github.com/TGIFelix/site"><img src="github.svg" alt="source"></a>
+		<a href='https://github.com/TGIFelix/site' title='view source code on github'><img src='github.svg' alt='source'></a>
 	</div>
 </main>
 
