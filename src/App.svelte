@@ -129,6 +129,12 @@
 			box-shadow: 25px 25px 0px #000000;
 		}
 		.bio {
+			font-size: 18px;
+		}
+	}
+
+	@media screen and (min-width: 1000px) {
+		.bio {
 			font-size: 24px;
 		}
 	}
