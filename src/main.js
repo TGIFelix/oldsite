@@ -3,11 +3,11 @@ import App from './App.svelte';
 const app = new App({
 	target: document.body,
 	props: {
-		bgColor: '#fcb183',
+		bgColor: '#FFEEB0',
 	}
 });
 
 document.documentElement.style
-	.setProperty('--bg-color', '#fcb183');
+	.setProperty('--bg-color', '#FFEEB0');
 
 export default app;
